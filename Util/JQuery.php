@@ -70,36 +70,56 @@ namespace EvilNode\Util {
             }
 
             $this->_documentReadyQueue[] = $snippet;
+            Registry::set('__JQDOCREADYQUEUE', $this->_documentReadyQueue);
         }
 
         /**
          * Gets the document.ready handlers
+         * @param wrap bool.  If set, will wrap with the appropriate markup and jquery wrapper
+         * @param prefix string.  jQuery prefix
          * @return string
          */
-        public function documentReady()
+        public function documentReady($wrap = true, $prefix = '$')
         {
             $out = '';
-            while(isset($this->_documentReadyQueue[0])) {
-                $out .= array_shift($this->_documentReadyQueue) .chr(10);
+            if ($wrap) {
+                $out .= <<<EOT
+<script type="text/javascript">
+{$prefix}(document).ready(function(){
+
+EOT;
+            }
+            while (isset($this->_documentReadyQueue[0])) {
+                $out .= chr(9) . array_shift($this->_documentReadyQueue) . chr(10);
+            }
+            if ($wrap) {
+                $out .= <<<EOT
+});
+</script>
+
+EOT;
             }
             return (strlen($out) > 0) ? $out : null;
         }
 
         /**
-         * @param $absPath
+         * Adds a javascript file include markup
+         * @param $absPath string The server path to the javascript file
          */
         public function addInclude($absPath)
         {
             $this->_includesQueue[] = $absPath;
+            Registry::set('__JQINCQUEUE', $this->_includesQueue);
         }
 
         /**
+         * Returns any javascript include markup as a string, or null if there are none
          * @return null|string
          */
         public function includes()
         {
             $out = '';
-            foreach($this->_includesQueue as $js) {
+            foreach ($this->_includesQueue as $js) {
                 $out .= <<<EOT
 <script type="text/javascript" src="{$js}"></script>
 
@@ -110,5 +130,4 @@ EOT;
         }
     }
 }
-
 
