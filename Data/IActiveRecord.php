@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\IActiveRecord
+ * EvilPHP\IActiveRecord
  */
-namespace EvilNode\Data {
+namespace EvilPHP\Data {
     /**
      * Interface IActiveRecord
-     * @package EvilNode\Data
+     * @package EvilPHP\Data
      */
     interface IActiveRecord
     {

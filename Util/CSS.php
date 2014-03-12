@@ -23,14 +23,14 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Util\CSS
+ * EvilPHP\Util\CSS
  */
 
-namespace EvilNode\Util{
+namespace EvilPHP\Util{
     /**
      * Class CSS
      *
-     * @package EvilNode\Util
+     * @package EvilPHP\Util
      */
     class CSS {
         /**

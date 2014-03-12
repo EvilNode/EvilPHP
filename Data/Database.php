@@ -23,11 +23,11 @@
  * THE SOFTWARE.
  *
  *
- * \EvilNode\Data\Database
+ * \EvilPHP\Data\Database
  */
-namespace EvilNode\Data {
-    use EvilNode\Util\Config;
-    use EvilNode\Util\Registry;
+namespace EvilPHP\Data {
+    use EvilPHP\Util\Config;
+    use EvilPHP\Util\Registry;
 
     /**
      * Class Database
@@ -178,7 +178,7 @@ namespace EvilNode\Data {
             $stmt = $stmtObj->stmt;
             if (class_exists($class)) {
                 $interfaces = array_values(class_implements($class, false));
-                if (in_array('EvilNode\Data\IDataMap', $interfaces, true)) {
+                if (in_array('EvilPHP\Data\IDataMap', $interfaces, true)) {
                     /** @noinspection PhpUndefinedMethodInspection */
                     $obj = $stmt->fetchObject();
                     return (false !== $obj) ? $class::fromGenericObject($obj) : null;
@@ -239,7 +239,7 @@ namespace EvilNode\Data {
             $stmt = $stmtObj->stmt;
             if (class_exists($class)) {
                 $interfaces = array_values(class_implements($class, false));
-                if (in_array('EvilNode\Data\IDataMap', $interfaces, true)) {
+                if (in_array('EvilPHP\Data\IDataMap', $interfaces, true)) {
                     $ret = array();
                     /** @noinspection PhpUndefinedMethodInspection */
                     $objs = $stmt->fetchAll(\PDO::FETCH_OBJ);

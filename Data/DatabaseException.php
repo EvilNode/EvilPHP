@@ -23,9 +23,9 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Data\DatabaseException
+ * EvilPHP\Data\DatabaseException
  */
-namespace EvilNode\Data {
+namespace EvilPHP\Data {
     class DatabaseException extends \Exception
     {
 

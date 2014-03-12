@@ -23,10 +23,10 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\MVC\Router
+ * EvilPHP\MVC\Router
  */
 
-namespace EvilNode\MVC {
+namespace EvilPHP\MVC {
     /**
      * MVC namespace helper function to convert an action
      * to an action function name
@@ -59,7 +59,7 @@ namespace EvilNode\MVC {
     class Router
     {
         /**
-         * @var \EvilNode\MVC\Router Router Singleton
+         * @var \EvilPHP\MVC\Router Router Singleton
          */
         private static $_sharedRouter = null;
         /**
@@ -104,7 +104,7 @@ namespace EvilNode\MVC {
 
         /**
          * Shared Router Singleton
-         * @return \EvilNode\MVC\Router|null
+         * @return \EvilPHP\MVC\Router|null
          */
         public static function sharedRouter()
         {
@@ -222,7 +222,7 @@ namespace EvilNode\MVC {
             }
             $controllerObj = new $controller();
             if (!($controllerObj instanceof Controller)) {
-                throw new MVCException("{$controller} does not inherit from EvilNode\\MVC\\Controller");
+                throw new MVCException("{$controller} does not inherit from EvilPHP\\MVC\\Controller");
             }
             $action = actionName($routeObj->action);
 

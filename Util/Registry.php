@@ -23,9 +23,9 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Util\Registry
+ * EvilPHP\Util\Registry
  */
-namespace EvilNode\Util {
+namespace EvilPHP\Util {
     /**
      * Class Registry
      * @package HSB

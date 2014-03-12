@@ -23,9 +23,9 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Data\UniqueKeyException
+ * EvilPHP\Data\UniqueKeyException
  */
-namespace EvilNode\Data {
+namespace EvilPHP\Data {
     class UniqueKeyException extends \Exception
     {
 

@@ -23,11 +23,11 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Event\EventBlock
+ * EvilPHP\Event\EventBlock
  */
-namespace EvilNode\Event {
+namespace EvilPHP\Event {
 
-    use EvilNode\Util\Generic;
+    use EvilPHP\Util\Generic;
     /**
      * Class EventBlock
      * @package HSB

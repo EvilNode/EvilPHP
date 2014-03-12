@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\MVC\View
+ * EvilPHP\MVC\View
  */
-namespace EvilNode\MVC {
+namespace EvilPHP\MVC {
     /**
      * Class View
-     * @package EvilNode\MVC
+     * @package EvilPHP\MVC
      */
     class View
     {

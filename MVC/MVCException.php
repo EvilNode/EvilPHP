@@ -23,13 +23,13 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\MVC\MVCException
+ * EvilPHP\MVC\MVCException
  */
-namespace EvilNode\MVC {
+namespace EvilPHP\MVC {
     /**
      * Class MVCException
      *
-     * @package EvilNode\MVC
+     * @package EvilPHP\MVC
      */
     class MVCException extends \Exception
     {

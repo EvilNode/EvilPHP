@@ -23,16 +23,16 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\MVC\Controller
+ * EvilPHP\MVC\Controller
  */
 
-namespace EvilNode\MVC {
-    use EvilNode\Util\Registry;
-    use EvilNode\Util\Generic;
+namespace EvilPHP\MVC {
+    use EvilPHP\Util\Registry;
+    use EvilPHP\Util\Generic;
 
     /**
      * Class Controller
-     * @package EvilNode\MVC
+     * @package EvilPHP\MVC
      */
     abstract class Controller
     {

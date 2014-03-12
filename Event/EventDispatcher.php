@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Event\EventDispatcher
+ * EvilPHP\Event\EventDispatcher
  */
-namespace EvilNode\Event {
+namespace EvilPHP\Event {
     /**
      * Class EventDispatcher
-     * @package EvilNode\Event
+     * @package EvilPHP\Event
      */
     class EventDispatcher
     {

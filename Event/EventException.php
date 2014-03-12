@@ -23,9 +23,9 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Event\EventException
+ * EvilPHP\Event\EventException
  */
-namespace EvilNode\Event {
+namespace EvilPHP\Event {
     class EventException extends \Exception
     {
 

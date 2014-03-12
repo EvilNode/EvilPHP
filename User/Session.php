@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\User\Session
+ * EvilPHP\User\Session
  */
-namespace EvilNode\User {
+namespace EvilPHP\User {
     /**
      * Class Session
-     * @package EvilNode\User
+     * @package EvilPHP\User
      */
     class Session
     {

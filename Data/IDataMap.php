@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\IDataMap
+ * EvilPHP\IDataMap
  */
-namespace EvilNode\Data {
+namespace EvilPHP\Data {
     /**
      * Interface IDataMap
-     * @package EvilNode\Data
+     * @package EvilPHP\Data
      */
     interface IDataMap
     {

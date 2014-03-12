@@ -23,12 +23,12 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Util\Config
+ * EvilPHP\Util\Config
  */
-namespace EvilNode\Util {
+namespace EvilPHP\Util {
     /**
      * Class Config
-     * @package EvilNode\Util
+     * @package EvilPHP\Util
      */
     class Config
     {

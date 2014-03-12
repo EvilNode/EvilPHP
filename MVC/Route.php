@@ -23,14 +23,14 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\MVC\Route
+ * EvilPHP\MVC\Route
  */
 
-namespace EvilNode\MVC {
+namespace EvilPHP\MVC {
 
     /**
      * Class Route
-     * @package EvilNode\MVC
+     * @package EvilPHP\MVC
      */
     class Route
     {

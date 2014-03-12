@@ -22,18 +22,18 @@
  * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
  * THE SOFTWARE.
  *
- * EvilNode\Util\Generic
+ * EvilPHP\Util\Generic
  * This class exists as a safe wrapper for argument passing among loosely coupled classes such as the EventDispatcher
  * or MVC\Controller.  Implicit gets that fail will return null and not trigger errors
  *
  * Note that this class only supports one level of depth, so if multiple levels are needed, you should be using stdClass
  * e.g. $obj->foo->bar = $something; //doesnt work here
  */
-namespace EvilNode\Util {
+namespace EvilPHP\Util {
     /**
      * Class Generic
      *
-     * @package EvilNode\Util
+     * @package EvilPHP\Util
      */
     class Generic
     {

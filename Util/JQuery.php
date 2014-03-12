@@ -23,14 +23,14 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\Util\JQuery
+ * EvilPHP\Util\JQuery
  */
 
-namespace EvilNode\Util {
+namespace EvilPHP\Util {
     /**
      * Class JQuery
      *
-     * @package EvilNode\Util
+     * @package EvilPHP\Util
      */
     class JQuery
     {

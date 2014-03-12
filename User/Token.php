@@ -23,9 +23,9 @@
  * THE SOFTWARE.
  *
  *
- * EvilNode\User\Token
+ * EvilPHP\User\Token
  */
-namespace EvilNode\User {
+namespace EvilPHP\User {
 
     class Token
     {
