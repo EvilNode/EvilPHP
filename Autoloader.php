@@ -6,9 +6,9 @@
  * Time: 5:26 PM
  */
 
-namespace EvilNode {
+namespace EvilPHP {
 
-    class EvilNode_Autoloader
+    class EvilPHP_Autoloader
     {
         static public function register()
         {
