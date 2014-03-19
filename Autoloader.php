@@ -25,7 +25,7 @@ namespace EvilPHP {
          */
         static public function autoload($class)
         {
-            if (0 !== strpos($class, 'EvilNode')) {
+            if (0 !== strpos($class, 'EvilPHP')) {
                 return;
             }
 
