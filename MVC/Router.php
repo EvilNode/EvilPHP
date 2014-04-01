@@ -250,7 +250,7 @@ namespace EvilPHP\MVC {
          */
         private function _matchingRegisteredRoute()
         {
-            $components = array_filter(explode('/', $_SERVER['REQUEST_URI']), 'strlen');
+            $components = array_values(array_filter(explode('/', $_SERVER['REQUEST_URI']), 'strlen'));
             $step = $this->_routerTable->$_SERVER['REQUEST_METHOD'];
             $found = true;
             $stringSlug = '%s';
@@ -281,7 +281,10 @@ namespace EvilPHP\MVC {
             //  this splits the query string up by the separator, then unsets empty or zero-length values,
             //  then filters out those empty values.
             //  All params are sent to the GET superglobal
-            $d = array_filter(explode('/', $_SERVER['REQUEST_URI']), 'strlen');
+            $d = array_values(array_filter(explode('/', $_SERVER['REQUEST_URI']), 'strlen'));
+            if (1 === count($d)) {
+                $d[] = 'index';
+            }
             $e = array();
             for ($i = 0; $j = count($d), $i < $j; $i++) {
                 if (isset($d[$i]{0})) {
