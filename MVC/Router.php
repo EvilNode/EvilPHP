@@ -281,7 +281,7 @@ namespace EvilPHP\MVC {
             //  this splits the query string up by the separator, then unsets empty or zero-length values,
             //  then filters out those empty values.
             //  All params are sent to the GET superglobal
-            $d = explode('/', $_SERVER['REQUEST_URI']);
+            $d = array_filter(explode('/', $_SERVER['REQUEST_URI']), 'strlen');
             $e = array();
             for ($i = 0; $j = count($d), $i < $j; $i++) {
                 if (isset($d[$i]{0})) {
