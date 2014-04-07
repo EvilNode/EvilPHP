@@ -247,7 +247,6 @@ namespace EvilPHP\Data {
                     for ($i = 0; $i < $numObjs; $i++) {
                         $ret[] = $class::fromGenericObject($objs[$i]);
                     }
-                    unset($assoc);
                     return $ret;
                 }
             }
