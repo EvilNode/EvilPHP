@@ -52,7 +52,10 @@ namespace EvilPHP\User {
         public function __construct()
         {
             if (!self::$_started) {
-                session_start();
+                $_sessid = session_id();
+                if (empty($_sessid)) {
+                    session_start();
+                }
                 self::$_started = true;
                 if (!isset($_SESSION[self::SESSKEY])) {
                     $_SESSION[self::SESSKEY] = array();
