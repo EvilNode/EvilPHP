@@ -19,7 +19,7 @@
  *  OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
  *  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
  */
- 
+
 namespace EvilPHP\Util {
 
     /**
@@ -45,7 +45,7 @@ namespace EvilPHP\Util {
          * @param $context  The storage context for getting and putting data
          * @param $create Create directory if it doesnt exist
          */
-        public function __construct($context, $create=true)
+        public function __construct($context, $create = true)
         {
             $this->path = EVILPHP_CACHE_PATH . DIRECTORY_SEPARATOR . preg_replace('/[^a-z0-9]/', '', strtolower($context));
             if (!(is_dir($this->path) || $create)) {
@@ -137,22 +137,47 @@ namespace EvilPHP\Util {
             return $this;
         }
 
-        public function invalidate($label)
-        {
-            $datafile = md5("{$label}");
-            $path = $this->path . DIRECTORY_SEPARATOR . $datafile;
-            self::clipPath($path);
-        }
-
+        /**
+         * Trims cached files in the ancestor tree
+         * @param $path
+         */
         private static function clipPath($path)
         {
             if (isset($path) && file_exists($path) && is_writeable($path)) {
                 $store = unserialize(file_get_contents($path));
                 unlink($path);
                 if (isset($store->parentpath)) {
-                    self::clipPath($store->parentpath);
+                    Cache::clipPath($store->parentpath);
                 }
             }
+        }
+
+        /**
+         * Forces a cache to update its value through a callback,
+         * then returns the callback result
+         * @param $label
+         * @param callable $callback
+         * @return null
+         */
+        public function force($label, \Closure $callback)
+        {
+            $store = $callback->__invoke();
+            if (isset($store)) {
+                $this->put($store, $label);
+                return $store;
+            }
+            return null;
+        }
+
+        /**
+         * Invalidates a cached object and its ancestor tree
+         * @param $label
+         */
+        public function invalidate($label)
+        {
+            $datafile = md5("{$label}");
+            $path = $this->path . DIRECTORY_SEPARATOR . $datafile;
+            self::clipPath($path);
         }
     }
 }
