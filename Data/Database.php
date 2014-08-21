@@ -95,8 +95,11 @@ namespace EvilPHP\Data {
          */
         public static function fromConfig(Config $config)
         {
+            /** @noinspection PhpUndefinedFieldInspection */
             $socket = isset($config->DATABASE->socket) ? $config->DATABASE->socket : null;
+            /** @noinspection PhpUndefinedFieldInspection */
             $options = isset($config->DATABASE->options) ? unserialize($config->DATABASE->options) : array();
+            /** @noinspection PhpUndefinedFieldInspection */
             return new Database(
                 $config->DATABASE->host,
                 $config->DATABASE->username,
@@ -181,6 +184,7 @@ namespace EvilPHP\Data {
                 if (in_array('EvilPHP\Data\IDataMap', $interfaces, true)) {
                     /** @noinspection PhpUndefinedMethodInspection */
                     $obj = $stmt->fetchObject();
+                    /** @noinspection PhpUndefinedMethodInspection */
                     return (false !== $obj) ? $class::fromGenericObject($obj) : null;
                 }
             }
@@ -245,6 +249,7 @@ namespace EvilPHP\Data {
                     $objs = $stmt->fetchAll(\PDO::FETCH_OBJ);
                     $numObjs = count($objs);
                     for ($i = 0; $i < $numObjs; $i++) {
+                        /** @noinspection PhpUndefinedMethodInspection */
                         $ret[] = $class::fromGenericObject($objs[$i]);
                     }
                     return $ret;
@@ -268,7 +273,8 @@ namespace EvilPHP\Data {
             $stmt = $stmtObj->stmt;
             $ret = array();
             /** @noinspection PhpUndefinedMethodInspection */
-            while ( $col = $stmt->fetchColumn()) {
+            /** @noinspection PhpAssignmentInConditionInspection */
+            while ($col = $stmt->fetchColumn()) {
                 $ret[] = $col;
             }
 
@@ -303,6 +309,7 @@ namespace EvilPHP\Data {
                 return false;
             }
             $stmt = $stmtObj->stmt;
+            /** @noinspection PhpUndefinedMethodInspection */
             $this->_affectedRows = $stmt->rowCount();
             return true;
         }

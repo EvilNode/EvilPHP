@@ -26,6 +26,10 @@
  * EvilPHP\Data\UniqueKeyException
  */
 namespace EvilPHP\Data {
+    /**
+     * Class UniqueKeyException
+     * @package EvilPHP\Data
+     */
     class UniqueKeyException extends \Exception
     {
 

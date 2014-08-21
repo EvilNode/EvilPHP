@@ -42,11 +42,12 @@ namespace EvilPHP\Util {
         protected $parentpath;
 
         /**
-         * @param $context  The storage context for getting and putting data
-         * @param $create Create directory if it doesnt exist
+         * @param $context string The storage context for getting and putting data
+         * @param bool $create Create directory if it doesnt exist
          */
         public function __construct($context, $create = true)
         {
+            /** @noinspection PhpUndefinedConstantInspection */
             $this->path = EVILPHP_CACHE_PATH . DIRECTORY_SEPARATOR . preg_replace('/[^a-z0-9]/', '', strtolower($context));
             if (!(is_dir($this->path) || $create)) {
                 if (!mkdir($this->path)) {
@@ -65,6 +66,7 @@ namespace EvilPHP\Util {
          */
         public function setParentCacheReference($path, $ident)
         {
+            /** @noinspection PhpUndefinedConstantInspection */
             $this->parentpath = EVILPHP_CACHE_PATH . DIRECTORY_SEPARATOR .
                 preg_replace('/[^a-z0-9]/', '', strtolower($path)) . DIRECTORY_SEPARATOR . md5("{$ident}");
 
@@ -99,6 +101,7 @@ namespace EvilPHP\Util {
                 }
             }
             if (isset($null_callback)) {
+                /** @noinspection PhpUndefinedMethodInspection */
                 $store = $null_callback->__invoke();
                 if (isset($store)) {
                     $this->put($store, $label);
@@ -133,7 +136,7 @@ namespace EvilPHP\Util {
                 flock($fp, LOCK_UN);
             }
             fclose($fp);
-            self::clipPath($this->parentpath);
+            static::clipPath($this->parentpath);
             return $this;
         }
 
@@ -147,7 +150,7 @@ namespace EvilPHP\Util {
                 $store = unserialize(file_get_contents($path));
                 unlink($path);
                 if (isset($store->parentpath)) {
-                    Cache::clipPath($store->parentpath);
+                    static::clipPath($store->parentpath);
                 }
             }
         }
@@ -161,6 +164,7 @@ namespace EvilPHP\Util {
          */
         public function force($label, \Closure $callback)
         {
+            /** @noinspection PhpUndefinedMethodInspection */
             $store = $callback->__invoke();
             if (isset($store)) {
                 $this->put($store, $label);
@@ -177,7 +181,7 @@ namespace EvilPHP\Util {
         {
             $datafile = md5("{$label}");
             $path = $this->path . DIRECTORY_SEPARATOR . $datafile;
-            self::clipPath($path);
+            static::clipPath($path);
         }
     }
 }

@@ -8,6 +8,10 @@
 
 namespace EvilPHP {
 
+    /**
+     * Class EvilPHP_Autoloader
+     * @package EvilPHP
+     */
     class EvilPHP_Autoloader
     {
         static public function register()
@@ -30,6 +34,7 @@ namespace EvilPHP {
             }
 
             $path = explode('\\', $class);
+            /** @noinspection PhpUndefinedConstantInspection */
             array_unshift($path, APP_LIB_PATH);
             $path = implode(DIRECTORY_SEPARATOR, $path) . '.php';
             if (is_file($path)) {

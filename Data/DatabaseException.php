@@ -26,6 +26,10 @@
  * EvilPHP\Data\DatabaseException
  */
 namespace EvilPHP\Data {
+    /**
+     * Class DatabaseException
+     * @package EvilPHP\Data
+     */
     class DatabaseException extends \Exception
     {
 

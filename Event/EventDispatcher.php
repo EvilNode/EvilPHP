@@ -25,7 +25,11 @@
  *
  * EvilPHP\Event\EventDispatcher
  */
+
 namespace EvilPHP\Event {
+
+    use EvilPHP\Util\Generic;
+
     /**
      * Class EventDispatcher
      * @package EvilPHP\Event
@@ -94,6 +98,7 @@ namespace EvilPHP\Event {
                 $this->_observerTree[$name] = new \SplPriorityQueue();
             }
             $queue = $this->_observerTree[$name];
+            /** @noinspection PhpUndefinedMethodInspection */
             $queue->insert($block, $priority);
         }
 
@@ -101,19 +106,23 @@ namespace EvilPHP\Event {
          * Triggers the named event.
          * Higher priority events can cancel the propagation of lower level events
          * @param $name
-         * @param $args
+         * @param Generic $obj
+         * @internal param $args
          */
         public function trigger($name, Generic $obj)
         {
             if (isset($this->_observerTree[$name])) {
                 $queue = $this->_observerTree[$name];
+                /** @noinspection PhpUndefinedMethodInspection */
                 $queue->rewind();
+                /** @noinspection PhpUndefinedMethodInspection */
                 while ($queue->valid()) {
                     if ($name === $this->stopPropagatingEventName) {
                         $this->stopPropagatingEventName = null;
                         unset($this->_observerTree[$name]);
                         return;
                     }
+                    /** @noinspection PhpUndefinedMethodInspection */
                     $eventBlock = $queue->extract();
                     $eventBlock->$name($obj);
                 }

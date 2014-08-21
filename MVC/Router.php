@@ -229,7 +229,7 @@ namespace EvilPHP\MVC {
             if (!method_exists($controllerObj, $action)) {
                 throw new MVCException("{$action} not implemented in {$controller}");
             }
-            $controllerObj->viewBase = self::viewPath() . DIRECTORY_SEPARATOR . $routeObj->controller . DIRECTORY_SEPARATOR . $routeObj->action;
+            $controllerObj->viewBase = static::viewPath() . DIRECTORY_SEPARATOR . $routeObj->controller . DIRECTORY_SEPARATOR . $routeObj->action;
             $controllerObj->preLaunch();
 
             //  the cancellation can be set within the prelaunch, action, and postlaunch
@@ -286,6 +286,7 @@ namespace EvilPHP\MVC {
                 $d[] = 'index';
             }
             $e = array();
+            /** @noinspection PhpAssignmentInConditionInspection */
             for ($i = 0; $j = count($d), $i < $j; $i++) {
                 if (isset($d[$i]{0})) {
                     $e[] = $d[$i];

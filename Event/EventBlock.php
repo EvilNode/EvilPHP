@@ -28,9 +28,10 @@
 namespace EvilPHP\Event {
 
     use EvilPHP\Util\Generic;
+
     /**
      * Class EventBlock
-     * @package HSB
+     * @package EvilPHP\Event
      */
     class EventBlock
     {
@@ -39,11 +40,11 @@ namespace EvilPHP\Event {
          */
         const STATE_READY = 0;
         /**
-         *  Indicates that the EVentBlock has finished executing
+         *  Indicates that the EventBlock has finished executing
          */
         const STATE_COMPLETE = 1;
         /**
-         * @var Closure The function to be executed during the callback phase
+         * @var \Closure The function to be executed during the callback phase
          */
         private $_closure;
         /**
@@ -57,8 +58,8 @@ namespace EvilPHP\Event {
 
         /**
          * Constructor
-         * @param $name The event name that will trigger the closure
-         * @param Closure $cl The function to be executed during the callback phase
+         * @param $name string The event name that will trigger the closure
+         * @param \Closure $cl The function to be executed during the callback phase
          */
         public function __construct($name, \Closure $cl)
         {
@@ -71,13 +72,14 @@ namespace EvilPHP\Event {
          * Anonymous callback.  If for some reason this object receives a __call to something
          * other than what was registered in the constructor, an assertion will fail.  You can
          * optionally handle this by using the assert_options function
-         * @param $name
-         * @param $args
+         * @param $name string
+         * @param $obj Generic
          * @return mixed
          */
         public function __call($name, Generic $obj)
         {
             if (assert('$name === $this->_blockName')) {
+                /** @noinspection PhpUndefinedMethodInspection */
                 $ret = $this->_closure->__invoke($obj);
                 $this->_status = self::STATE_COMPLETE;
                 return $ret;

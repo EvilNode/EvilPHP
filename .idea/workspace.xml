@@ -2,7 +2,6 @@
 <project version="4">
   <component name="AnalysisUIOptions">
     <option name="ANALYZE_TEST_SOURCES" value="false" />
-    <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8baae4db-a095-41c0-a0eb-aa8961aba83d" name="Default" comment="" />
@@ -27,77 +26,42 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CSS.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Util/CSS.php">
+      <file leaf-file-name="Autoloader.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Autoloader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="1249" selection-end="1249" vertical-scroll-proportion="-9.25" vertical-offset="258" max-vertical-offset="1740">
+            <state line="37" column="33" selection-start="910" selection-end="910" vertical-scroll-proportion="-7.4166665" vertical-offset="302" max-vertical-offset="705">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cache.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Util/Cache.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="167" column="32" selection-start="6141" selection-end="6141" vertical-scroll-proportion="-5.5833335" vertical-offset="2371" max-vertical-offset="2925">
               <folding>
-                <element signature="e#6#1175#0" expanded="true" />
+                <element signature="e#6#1196#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Registry.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Util/Registry.php">
+      <file leaf-file-name="Database.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Data/Database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.3328336" vertical-offset="183" max-vertical-offset="1395">
-              <folding>
-                <element signature="e#6#1180#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Generic.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Util/Generic.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="16" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-9.25" vertical-offset="303" max-vertical-offset="1515">
-              <folding>
-                <element signature="e#6#1561#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JQuery.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Util/JQuery.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-9.25" vertical-offset="258" max-vertical-offset="2085">
-              <folding>
-                <element signature="e#6#1178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Config.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Util/Config.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-9.25" vertical-offset="228" max-vertical-offset="1695">
-              <folding>
-                <element signature="e#6#1178#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Controller.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/Controller.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="16" selection-start="1317" selection-end="1317" vertical-scroll-proportion="-9.083333" vertical-offset="292" max-vertical-offset="2520">
+            <state line="312" column="42" selection-start="10410" selection-end="10410" vertical-scroll-proportion="-5.5833335" vertical-offset="4546" max-vertical-offset="6300">
               <folding>
                 <element signature="e#6#1181#0" expanded="true" />
-                <element signature="e#1211#1237#0" expanded="true" />
+                <element signature="e#1211#1235#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MVCException.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/MVCException.php">
+      <file leaf-file-name="EventBlock.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/EventBlock.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="645">
+            <state line="82" column="40" selection-start="2939" selection-end="2939" vertical-scroll-proportion="-5.9166665" vertical-offset="1088" max-vertical-offset="1710">
               <folding>
                 <element signature="e#6#1183#0" expanded="true" />
               </folding>
@@ -105,35 +69,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Route.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/Route.php">
+      <file leaf-file-name="EventDispatcher.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Event/EventDispatcher.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="32" column="16" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-9.666667" vertical-offset="248" max-vertical-offset="915">
+            <state line="101" column="20" selection-start="3091" selection-end="3091" vertical-scroll-proportion="-5.5833335" vertical-offset="1381" max-vertical-offset="2205">
               <folding>
-                <element signature="e#6#1176#0" expanded="true" />
+                <element signature="e#6#1188#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Router.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/Router.php">
+      <file leaf-file-name="Controller.php" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MVC/Controller.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="76" selection-start="7195" selection-end="7195" vertical-scroll-proportion="-9.083333" vertical-offset="3142" max-vertical-offset="4905">
-              <folding>
-                <element signature="e#6#1177#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="View.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/MVC/View.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="16" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-9.25" vertical-offset="228" max-vertical-offset="1815">
-              <folding>
-                <element signature="e#6#1175#0" expanded="true" />
-              </folding>
+            <state line="154" column="32" selection-start="6056" selection-end="6056" vertical-scroll-proportion="0.65317917" vertical-offset="1468" max-vertical-offset="2160">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -148,27 +99,28 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Autoloader.php" />
-        <option value="$PROJECT_DIR$/Data/Database.php" />
-        <option value="$PROJECT_DIR$/Data/DatabaseException.php" />
         <option value="$PROJECT_DIR$/Data/IActiveRecord.php" />
         <option value="$PROJECT_DIR$/Data/IDataMap.php" />
-        <option value="$PROJECT_DIR$/Data/UniqueKeyException.php" />
-        <option value="$PROJECT_DIR$/Event/EventBlock.php" />
-        <option value="$PROJECT_DIR$/Event/EventDispatcher.php" />
-        <option value="$PROJECT_DIR$/Event/EventException.php" />
-        <option value="$PROJECT_DIR$/MVC/Controller.php" />
         <option value="$PROJECT_DIR$/MVC/MVCException.php" />
         <option value="$PROJECT_DIR$/MVC/Route.php" />
-        <option value="$PROJECT_DIR$/MVC/Router.php" />
         <option value="$PROJECT_DIR$/MVC/View.php" />
         <option value="$PROJECT_DIR$/User/Session.php" />
-        <option value="$PROJECT_DIR$/User/Token.php" />
         <option value="$PROJECT_DIR$/Util/CSS.php" />
         <option value="$PROJECT_DIR$/Util/Config.php" />
         <option value="$PROJECT_DIR$/Util/Generic.php" />
-        <option value="$PROJECT_DIR$/Util/JQuery.php" />
         <option value="$PROJECT_DIR$/Util/Registry.php" />
+        <option value="$PROJECT_DIR$/MVC/Router.php" />
+        <option value="$PROJECT_DIR$/Util/JQuery.php" />
+        <option value="$PROJECT_DIR$/User/Token.php" />
+        <option value="$PROJECT_DIR$/Data/DatabaseException.php" />
+        <option value="$PROJECT_DIR$/Data/UniqueKeyException.php" />
+        <option value="$PROJECT_DIR$/Event/EventException.php" />
+        <option value="$PROJECT_DIR$/Autoloader.php" />
+        <option value="$PROJECT_DIR$/Event/EventBlock.php" />
+        <option value="$PROJECT_DIR$/Event/EventDispatcher.php" />
+        <option value="$PROJECT_DIR$/Data/Database.php" />
+        <option value="$PROJECT_DIR$/Util/Cache.php" />
+        <option value="$PROJECT_DIR$/MVC/Controller.php" />
       </list>
     </option>
   </component>
@@ -176,7 +128,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
     <option name="width" value="1440" />
-    <option name="height" value="832" />
+    <option name="height" value="826" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -204,7 +156,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -213,14 +164,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EvilPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EvilPHP" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ArcherTransferSite" />
     <property name="FullScreen" value="false" />
+    <property name="SearchEverywhereHistory" value="self" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -248,8 +211,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="832" extended-state="6" />
-    <editor active="false" />
+    <frame x="0" y="22" width="1440" height="826" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -262,14 +225,14 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25608012" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25555557" sideWeight="0.6" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3989432" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -289,6 +252,78 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Util/CSS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1249" selection-end="1249" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="1395">
+          <folding>
+            <element signature="e#6#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Generic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="35" column="16" selection-start="1639" selection-end="1639" vertical-scroll-proportion="0.0" vertical-offset="525" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/JQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1256" selection-end="1256" vertical-scroll-proportion="0.0" vertical-offset="258" max-vertical-offset="2085">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="1248" selection-end="1248" vertical-scroll-proportion="0.0" vertical-offset="450" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/Controller.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="16" selection-start="1317" selection-end="1317" vertical-scroll-proportion="0.0" vertical-offset="292" max-vertical-offset="2520">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/MVCException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.0" vertical-offset="465" max-vertical-offset="645">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1246" selection-end="1246" vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="915">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="224" column="76" selection-start="7195" selection-end="7195" vertical-scroll-proportion="0.0" vertical-offset="3360" max-vertical-offset="4965">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="1242" selection-end="1242" vertical-scroll-proportion="0.0" vertical-offset="228" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/User/Session.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="24" selection-start="1176" selection-end="1176" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2100">
@@ -316,34 +351,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Data/Database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="30" selection-start="8055" selection-end="8055" vertical-scroll-proportion="-9.375" vertical-offset="3390" max-vertical-offset="6195">
-          <folding>
-            <element signature="e#6#1181#0" expanded="true" />
-            <element signature="e#1211#1235#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/DatabaseException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="570">
-          <folding>
-            <element signature="e#6#1189#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Data/IActiveRecord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1261" selection-end="1261" vertical-scroll-proportion="-12.5" vertical-offset="150" max-vertical-offset="840">
-          <folding>
-            <element signature="e#6#1180#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Data/IDataMap.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="16" selection-start="1251" selection-end="1251" vertical-scroll-proportion="-17.791666" vertical-offset="23" max-vertical-offset="690">
@@ -353,18 +360,137 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/MVCException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="0.65957445" vertical-offset="0" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Registry.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="18" selection-start="1870" selection-end="1870" vertical-scroll-proportion="-16.8" vertical-offset="0" max-vertical-offset="1395">
+          <folding>
+            <element signature="e#6#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Generic.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="387" selection-end="390" vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="1515">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/CSS.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="387" selection-end="390" vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="1740">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="387" selection-end="390" vertical-scroll-proportion="-2.7" vertical-offset="0" max-vertical-offset="1695">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/Session.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="124" column="36" selection-start="3595" selection-end="3599" vertical-scroll-proportion="-7.58" vertical-offset="1481" max-vertical-offset="2160">
+          <folding>
+            <element signature="e#6#1179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/Route.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="16" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="540">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/View.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="75" selection-start="387" selection-end="390" vertical-scroll-proportion="0.1988218" vertical-offset="0" max-vertical-offset="1815">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/IActiveRecord.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="16" selection-start="1261" selection-end="1261" vertical-scroll-proportion="0.48085105" vertical-offset="111" max-vertical-offset="840">
+          <folding>
+            <element signature="e#6#1180#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MVC/Router.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="289" column="25" selection-start="9889" selection-end="9889" vertical-scroll-proportion="-5.4166665" vertical-offset="3830" max-vertical-offset="4605">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/JQuery.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="8" selection-start="2486" selection-end="2486" vertical-scroll-proportion="-5.9166665" vertical-offset="983" max-vertical-offset="2115">
+          <folding>
+            <element signature="e#6#1178#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/User/Token.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="28" selection-start="1259" selection-end="1259" vertical-scroll-proportion="-7.1666665" vertical-offset="293" max-vertical-offset="1905">
+          <folding>
+            <element signature="e#6#1177#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Data/DatabaseException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="28" selection-start="1282" selection-end="1282" vertical-scroll-proportion="-11.833333" vertical-offset="166" max-vertical-offset="630">
+          <folding>
+            <element signature="e#6#1189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Data/UniqueKeyException.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="1201" selection-end="1201" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="570">
+        <state line="30" column="28" selection-start="1284" selection-end="1284" vertical-scroll-proportion="-11.833333" vertical-offset="166" max-vertical-offset="630">
           <folding>
             <element signature="e#6#1190#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Event/EventException.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="29" selection-start="1279" selection-end="1279" vertical-scroll-proportion="0.70471466" vertical-offset="166" max-vertical-offset="630">
+          <folding>
+            <element signature="e#6#1187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Autoloader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="33" selection-start="910" selection-end="910" vertical-scroll-proportion="-7.4166665" vertical-offset="302" max-vertical-offset="705">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Event/EventBlock.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="8" selection-start="1219" selection-end="1219" vertical-scroll-proportion="-9.25" vertical-offset="213" max-vertical-offset="1680">
+        <state line="82" column="40" selection-start="2939" selection-end="2939" vertical-scroll-proportion="-5.9166665" vertical-offset="1088" max-vertical-offset="1710">
           <folding>
             <element signature="e#6#1183#0" expanded="true" />
           </folding>
@@ -373,128 +499,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Event/EventDispatcher.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1268" selection-end="1268" vertical-scroll-proportion="-9.25" vertical-offset="228" max-vertical-offset="2070">
+        <state line="101" column="20" selection-start="3091" selection-end="3091" vertical-scroll-proportion="-5.5833335" vertical-offset="1381" max-vertical-offset="2205">
           <folding>
             <element signature="e#6#1188#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Event/EventException.php">
+    <entry file="file://$PROJECT_DIR$/Data/Database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="1198" selection-end="1198" vertical-scroll-proportion="-16.875" vertical-offset="0" max-vertical-offset="570">
+        <state line="312" column="42" selection-start="10410" selection-end="10410" vertical-scroll-proportion="-5.5833335" vertical-offset="4546" max-vertical-offset="6300">
           <folding>
-            <element signature="e#6#1187#0" expanded="true" />
+            <element signature="e#6#1181#0" expanded="true" />
+            <element signature="e#1211#1235#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Util/Cache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="167" column="32" selection-start="6141" selection-end="6141" vertical-scroll-proportion="-5.5833335" vertical-offset="2371" max-vertical-offset="2925">
+          <folding>
+            <element signature="e#6#1196#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MVC/Controller.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="16" selection-start="1317" selection-end="1317" vertical-scroll-proportion="-9.083333" vertical-offset="292" max-vertical-offset="2520">
-          <folding>
-            <element signature="e#6#1181#0" expanded="true" />
-            <element signature="e#1211#1237#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/MVCException.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="16" selection-start="1265" selection-end="1265" vertical-scroll-proportion="-19.375" vertical-offset="0" max-vertical-offset="645">
-          <folding>
-            <element signature="e#6#1183#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/Route.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1246" selection-end="1246" vertical-scroll-proportion="-9.666667" vertical-offset="248" max-vertical-offset="915">
-          <folding>
-            <element signature="e#6#1176#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/Router.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="76" selection-start="7195" selection-end="7195" vertical-scroll-proportion="-9.083333" vertical-offset="3142" max-vertical-offset="4905">
-          <folding>
-            <element signature="e#6#1177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/MVC/View.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1242" selection-end="1242" vertical-scroll-proportion="-9.25" vertical-offset="228" max-vertical-offset="1815">
-          <folding>
-            <element signature="e#6#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/Session.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1250" selection-end="1250" vertical-scroll-proportion="0.3328336" vertical-offset="228" max-vertical-offset="2100">
-          <folding>
-            <element signature="e#6#1179#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/User/Token.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="1188" selection-end="1188" vertical-scroll-proportion="0.3328336" vertical-offset="183" max-vertical-offset="1845">
-          <folding>
-            <element signature="e#6#1177#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/CSS.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1249" selection-end="1249" vertical-scroll-proportion="-9.25" vertical-offset="258" max-vertical-offset="1740">
-          <folding>
-            <element signature="e#6#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="16" selection-start="1248" selection-end="1248" vertical-scroll-proportion="-9.25" vertical-offset="228" max-vertical-offset="1695">
-          <folding>
-            <element signature="e#6#1178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Generic.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="16" selection-start="1639" selection-end="1639" vertical-scroll-proportion="-9.25" vertical-offset="303" max-vertical-offset="1515">
-          <folding>
-            <element signature="e#6#1561#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/JQuery.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="16" selection-start="1256" selection-end="1256" vertical-scroll-proportion="-9.25" vertical-offset="258" max-vertical-offset="2085">
-          <folding>
-            <element signature="e#6#1178#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Util/Registry.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="10" selection-start="1191" selection-end="1191" vertical-scroll-proportion="0.3328336" vertical-offset="183" max-vertical-offset="1395">
-          <folding>
-            <element signature="e#6#1180#0" expanded="true" />
-          </folding>
+        <state line="154" column="32" selection-start="6056" selection-end="6056" vertical-scroll-proportion="0.65317917" vertical-offset="1468" max-vertical-offset="2160">
+          <folding />
         </state>
       </provider>
     </entry>

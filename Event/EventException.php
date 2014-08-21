@@ -26,6 +26,10 @@
  * EvilPHP\Event\EventException
  */
 namespace EvilPHP\Event {
+    /**
+     * Class EventException
+     * @package EvilPHP\Event
+     */
     class EventException extends \Exception
     {
 

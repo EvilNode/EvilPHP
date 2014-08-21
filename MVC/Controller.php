@@ -73,12 +73,13 @@ namespace EvilPHP\MVC {
         /**
          * Forwards control to another action within the same or different controller.
          * @param string $action The named action to forward to
-         * @param Generic $args Any arguments to pass to the receiver action. Note that the arguments must be pulled in the receiver using func_get_args
+         * @param \EvilPHP\Util\Generic $obj
          * @param string $controller The controller class
          * @param bool $eraseBuffer Flag that causes the current buffer to be cleared
          * @param bool $cancelPreLaunch Flag to suppress action prelaunch.  Note that pre and post launch are not called when forwarding to the same controller
          * @param bool $cancelPostLaunch Flag to suppress action postLaunch.  Note that pre and post launch are not called when forwarding to the same controller
          * @throws MVCException
+         * @internal param \EvilPHP\Util\Generic $args Any arguments to pass to the receiver action. Note that the arguments must be pulled in the receiver using func_get_args
          */
         public final function forward($action, Generic $obj = null, $controller = null, $eraseBuffer = false, $cancelPreLaunch = false, $cancelPostLaunch = false)
         {
@@ -150,6 +151,7 @@ namespace EvilPHP\MVC {
                 $e = explode(DIRECTORY_SEPARATOR, $this->viewBase);
                 $sub = array_slice($e, -2);
                 $template = $twig->loadTemplate(implode(DIRECTORY_SEPARATOR, $sub) . '.twig');
+                /** @noinspection PhpUndefinedMethodInspection */
                 echo $template->render($this->view->declaredProperties());
             } else {
 

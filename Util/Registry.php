@@ -54,7 +54,7 @@ namespace EvilPHP\Util {
          */
         public static function remove($key)
         {
-            self::set($key, null);
+            static::set($key, null);
         }
 
         /**

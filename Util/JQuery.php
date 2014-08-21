@@ -75,8 +75,10 @@ namespace EvilPHP\Util {
 
         /**
          * Gets the document.ready handlers
-         * @param wrap bool.  If set, will wrap with the appropriate markup and jquery wrapper
-         * @param prefix string.  jQuery prefix
+         * @param bool $wrap
+         * @param string $prefix
+         * @internal param bool $wrap .  If set, will wrap with the appropriate markup and jquery wrapper
+         * @internal param string $prefix .  jQuery prefix
          * @return string
          */
         public function documentReady($wrap = true, $prefix = '$')

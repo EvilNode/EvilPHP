@@ -27,6 +27,10 @@
  */
 namespace EvilPHP\User {
 
+    /**
+     * Class Token
+     * @package EvilPHP\User
+     */
     class Token
     {
         /**
