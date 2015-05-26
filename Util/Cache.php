@@ -49,7 +49,7 @@ namespace EvilPHP\Util {
         {
             /** @noinspection PhpUndefinedConstantInspection */
             $this->path = EVILPHP_CACHE_PATH . DIRECTORY_SEPARATOR . preg_replace('/[^a-z0-9]/', '', strtolower($context));
-            if (!(is_dir($this->path) || $create)) {
+            if (!is_dir($this->path) && $create) {
                 if (!mkdir($this->path)) {
                     trigger_error('Cache could not be instantiated', E_USER_WARNING);
                 }
