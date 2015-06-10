@@ -127,7 +127,8 @@ namespace EvilPHP\Data {
 
             $stmt = $stmtObj->stmt;
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetchColumn();
+            $ret = $stmt->fetchColumn();
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -144,7 +145,8 @@ namespace EvilPHP\Data {
 
             $stmt = $stmtObj->stmt;
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetch(\PDO::FETCH_ASSOC);
+            $ret = $stmt->fetch(\PDO::FETCH_ASSOC);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -161,7 +163,8 @@ namespace EvilPHP\Data {
 
             $stmt = $stmtObj->stmt;
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetch(\PDO::FETCH_OBJ);
+            $ret = $stmt->fetch(\PDO::FETCH_OBJ);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -190,7 +193,8 @@ namespace EvilPHP\Data {
             }
 
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetchObject($class);
+            $ret = $stmt->fetchObject($class);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -207,7 +211,8 @@ namespace EvilPHP\Data {
 
             $stmt = $stmtObj->stmt;
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetchAll(\PDO::FETCH_ASSOC);
+            $ret = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -224,7 +229,8 @@ namespace EvilPHP\Data {
 
             $stmt = $stmtObj->stmt;
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetchAll(\PDO::FETCH_OBJ);
+            $ret = $stmt->fetchAll(\PDO::FETCH_OBJ);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -256,7 +262,8 @@ namespace EvilPHP\Data {
                 }
             }
             /** @noinspection PhpUndefinedMethodInspection */
-            return $stmt->fetchAll(\PDO::FETCH_CLASS, $class);
+            $ret = $stmt->fetchAll(\PDO::FETCH_CLASS, $class);
+	        return ($ret === false) ? null : $ret;
         }
 
         /**
@@ -278,7 +285,7 @@ namespace EvilPHP\Data {
                 $ret[] = $col;
             }
 
-            return $ret;
+            return empty($ret) ? null : $ret;
         }
 
         /**
